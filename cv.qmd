@@ -1,0 +1,174 @@
+---
+name: \Huge\textbf{Charlie Homewood}
+location: Brighton, East Sussex, UK
+phone: "+44 7307 233382"
+email: charliehomewood99@gmail.com
+linkedin: https://www.linkedin.com/in/charliehomewood/
+github: https://github.com/CharlieHomewood
+profilepic: "assets/me.png"
+format:
+    pdf:
+        documentclass: article
+        fontsize: 10pt
+        geometry: 
+          - top=0in
+          - bottom=0.25in
+          - left=0.5in
+          - right=0.5in
+        include-in-header:
+            text: |
+                \usepackage{tikz}
+                \usepackage{titling}
+                \usepackage{setspace}
+                \usepackage[most]{tcolorbox}
+                \pagestyle{empty}
+        header-includes: |
+            \makeatletter
+            \let\@title\relax
+            \let\@author\relax
+            \let\@date\relax
+            \let\@thanks\relax
+            \makeatother
+output-file: "Charlie_Homewood_CV.pdf"
+---
+
+\thispagestyle{empty}
+
+\vspace{-10em}
+
+:::: {layout="[0.35, 0.65]"}
+:::{.column}
+\vspace{-7em}
+::: {.flushleft data-latex="true"}
+
+# {{< meta name >}}
+
+\vspace{0.5em}
+
+![]({{< meta profilepic >}}){width=150}
+
+\vspace{0.5em}
+
+# {{< fa circle-info >}} Personal Info
+
+{{< fa location-dot >}} {{< meta location >}}
+
+\vspace{0.5em}
+
+{{< fa phone >}} {{< meta phone >}}
+
+\vspace{0.5em}
+
+[{{< fa envelope >}} {{< meta email >}}](mailto:{{< meta email >}})  
+
+\vspace{0.5em}
+
+[{{< fa brands linkedin >}} LinkedIn]({{< meta linkedin >}}) | [{{< fa brands github >}} GitHub]({{< meta github >}})
+
+\vspace{0.5em}
+
+\noindent\rule{0.8\linewidth}{0.4pt}
+
+\vspace{-0.75em}
+ 
+# {{< fa wrench >}} Tools
+
+{{< include cv_sections/tools.qmd >}}
+
+\vspace{0.5em}
+
+\noindent\rule{0.8\linewidth}{0.4pt}
+
+\vspace{-0.75em}
+
+# {{< fa pencil >}} Project Portfolio
+
+{{< include cv_sections/project_portfolio.qmd >}}
+
+\vspace{0.5em}
+
+\noindent\rule{0.8\linewidth}{0.4pt}
+
+\vspace{-0.75em}
+
+# {{< fa person-chalkboard >}} Presentations
+
+{{< include cv_sections/public_presentations.qmd >}}
+
+:::
+:::
+:::{.column}
+::: {.flushleft data-latex="true"}
+# {{< fa circle-question >}} Who am I?
+ 
+{{< include cv_sections/aboutme.qmd lines="1" >}}
+
+\begin{center}\noindent\rule{0.8\linewidth}{0.4pt}\end{center}
+
+\vspace{-0.75em}
+
+# {{< fa briefcase >}} Work Experience
+
+```{python}
+#| echo: false
+import yaml
+from datetime import datetime
+
+with open("data/work_experience.yml", "r", encoding="utf-8") as f:
+    jobs = yaml.safe_load(f)
+
+def parse_date(date_str):
+    if date_str.lower() == "present":
+        return datetime.max
+    try:
+        return datetime.strptime(date_str, "%b %Y")
+    except:
+        return datetime.min
+
+jobs_sorted = sorted(jobs, key=lambda j: parse_date(j["end"]), reverse=True)
+
+with open("cv_sections/work_experience.qmd", "w", encoding="utf-8") as f:
+    for i, job in enumerate(jobs_sorted):
+        f.write(f"**{job['role']} | [{job['company']}]({job['company-url']})** | *{job['start']} - {job['end']}* \n")
+        f.write("\\vspace{0.25em} \n\n")
+        for desc in job['description']:
+            f.write(f" - {desc}\n")
+        if i < len(jobs_sorted) - 1:
+            f.write("\n\\vspace{0.75em}\n\n")
+```
+
+{{< include cv_sections/work_experience.qmd >}}
+
+\vspace{-0.75em}
+
+# {{< fa building-columns >}} Education
+
+```{python}
+#| echo: false
+import yaml
+from datetime import datetime
+
+with open("data/education.yml", "r", encoding="utf-8") as f:
+    education = yaml.safe_load(f)
+
+education_sorted = sorted(education, key=lambda j: parse_date(j["end"]), reverse=True)
+
+with open("cv_sections/education.qmd", "w", encoding="utf-8") as f:
+    for i, education in enumerate(education_sorted):
+        f.write(f"**{education['degree']}** - *{education['institution']}* \n\n")
+        f.write(f"*{education['start']} - {education['end']}*\n\n")
+        f.write(f"Grade: **{education['grade']}**")
+        f.write("\\vspace{0.5em} \n\n")
+        if education['awards']:
+            f.write("**Awards:**\n\n")
+            for award in education['awards']:
+                f.write(f" - {award}\n")
+            if i < len(education_sorted) - 1:
+                f.write("\n\\vspace{1em}\n\n")
+```
+
+{{< include cv_sections/education.qmd >}}
+
+:::
+:::
+::::

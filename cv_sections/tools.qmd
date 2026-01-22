@@ -1,0 +1,9 @@
+[{{< fa brands python size=Large >}} Python](https://www.python.org/doc/essays/blurb/)
+
+\vspace{0.5em}
+
+[{{< fa brands r-project size=large >}} R](https://www.r-project.org/about.html)
+
+\vspace{0.5em}
+
+[{{< fa brands database size=Large >}} SQL](https://en.wikipedia.org/wiki/SQL)

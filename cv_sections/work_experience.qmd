@@ -1,0 +1,33 @@
+**Data Analyst | [Datacove](https://datacove.co.uk/)** | *Jun 2025 - Jan 2026* 
+\vspace{0.25em} 
+
+ - \textbf{Developed dashboards using \href{https://shiny.posit.co/}{Shiny} (R \& Python)} to visualise ecosystem data for the UK public sector, and for a higher education marketing agency to communicate predictive modelling insights about university applications.
+ - \textbf{Conducted \href{https://en.wikipedia.org/wiki/Marketing\_mix\_modeling}{Marketing Mix Modelling}} for a commercial business premises provider and for a leading fitness and leisure business.
+ - \textbf{Performed data cleaning in R and Python} for mutliple projects.
+ - \textbf{Helped to co-organise and run community events}, such as [EARL 2025](https://earl-conference.com/earl-archive/2025-2/) and [BrightonR](https://www.meetup.com/silicon-brighton-brighton-r/), [BrightonPy](https://www.meetup.com/brightonpy/) and [LondonR](https://www.meetup.com/londonr/) user groups.
+
+\vspace{0.75em}
+
+**Data Analyst | [Aten Consultancy](https://www.atenconsultancy.com/)** | *May 2024 - Aug 2024* 
+\vspace{0.25em} 
+
+ - \textbf{Used SQL and consulted with council departments} to develop understanding of various datasets to inform production of a building safety management app to enhance compliance with [the "Golden Thread"](https://buildingsafety.campaign.gov.uk/building-safety-regulator-making-buildings-safer/building-safety-regulator-news/understanding-the-golden-thread/).
+ - \textbf{Used R to pre-process and clean} a large resident contact details data extract, enabling Camden's resident engagement team to gain greater outreach.
+
+\vspace{0.75em}
+
+**Data Analyst Intern | [Datacove](https://datacove.co.uk/)** | *Jul 2023 - Sep 2023* 
+\vspace{0.25em} 
+
+ - Created a training course on logistic regression in R, now part of Datacove's portfolio of commercial training courses.
+ - Wireframed a dashboard (MS PowerPoint and [Kibana](https://www.elastic.co/kibana)) for detecting website vulnerabilities.
+ - Optimised Marketing Mix Models in R.
+
+\vspace{0.75em}
+
+**Project Manager Intern | [Mindlab](https://themindlab.co.uk/)** | *Jun 2022 - Jul 2022* 
+\vspace{0.25em} 
+
+ - Designed and produced experimental stimuli for a pilot internal research experiment aiming to validate and improve [Mindlab's "Findability" measurement tool](https://themindlab.co.uk/how/measuring-visual-attention/#:~:text=elements%20between%20trials.-,Findability,-To%20assess%20how).
+ - \href{https://themindlab.co.uk/case-study/finding-the-ideal-customer/}{Produced a summary report} of a customer segmentation project.
+ - Explored viability of incorporating "Social Listening" into Mindlab's measurement tools.
