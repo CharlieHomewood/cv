@@ -2,5 +2,12 @@
 
 ## Highlights:
 
- - Something!
- - Something else!
+ - [**Shiny app to visualise football player data using percentile radars**](https://github.com/CharlieHomewood/making-percentile-radars)
+
+\vspace{0.5em}
+
+ - [**(University) Exploratory Factor Analysis to produce a novel self-esteem questionnaire**](https://github.com/CharlieHomewood/QQM-EFA)
+
+\vspace{0.5em}
+
+ - [**(University) Analysis of the Open University Learning Analytics Dataset (OULAD)**](https://github.com/CharlieHomewood/DSRM_A1_report)
