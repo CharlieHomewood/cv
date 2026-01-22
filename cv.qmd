@@ -8,6 +8,8 @@ github: https://github.com/CharlieHomewood
 profilepic: "assets/me.png"
 format:
     pdf:
+        pdf-engine: lualatex
+        mainfont: "Spectral"
         documentclass: article
         fontsize: 10pt
         geometry: 
