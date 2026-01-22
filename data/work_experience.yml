@@ -22,15 +22,15 @@
   start: Jul 2023
   end: Sep 2023
   description:
-    - Created a training course on logistic regression in R, now part of Datacove's portfolio of commercial training courses.
-    - Wireframed a dashboard (MS PowerPoint and [Kibana](https://www.elastic.co/kibana)) for detecting website vulnerabilities. 
-    - Optimised Marketing Mix Models in R.
+    - \textbf{Created a training course on logistic regression in R}, now part of Datacove's portfolio of commercial training courses.
+    - \textbf{Wireframed a dashboard} (MS PowerPoint and [Kibana](https://www.elastic.co/kibana)) for detecting website vulnerabilities. 
+    - \textbf{Optimised Marketing Mix Models in R.}
 - company: Mindlab
   company-url: https://themindlab.co.uk/
   role: Project Manager Intern
   start: Jun 2022
   end: Jul 2022
   description:
-    - Designed and produced experimental stimuli for a pilot internal research experiment aiming to validate and improve [Mindlab's "Findability" measurement tool](https://themindlab.co.uk/how/measuring-visual-attention/#:~:text=elements%20between%20trials.-,Findability,-To%20assess%20how).
-    - \href{https://themindlab.co.uk/case-study/finding-the-ideal-customer/}{Produced a summary report} of a customer segmentation project.
-    - Explored viability of incorporating "Social Listening" into Mindlab's measurement tools.
+    - \textbf{Designed and produced experimental stimuli} for a pilot internal research experiment aiming to validate and improve [Mindlab's "Findability" measurement tool](https://themindlab.co.uk/how/measuring-visual-attention/#:~:text=elements%20between%20trials.-,Findability,-To%20assess%20how).
+    - \textbf{\href{https://themindlab.co.uk/case-study/finding-the-ideal-customer/}{Produced a summary report} of a customer segmentation project.}
+    - Explored viability of incorporating \textbf{"Social Listening"} into Mindlab's measurement tools.
